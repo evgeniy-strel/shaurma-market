@@ -10,6 +10,7 @@ function Categories(props) {
     }
     return basisClassCategory;
   };
+  
   return (
     <div className="main_categories">
       <ul>

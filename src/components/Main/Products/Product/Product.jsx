@@ -1,10 +1,11 @@
-import React from 'react';
+import React from "react";
+import testImg from "./../../../../img/shaurma/kurinaya.jpg";
 
 function Product(props) {
-  let selectRef = React.useRef('');
+  let selectRef = React.useRef("");
   React.useEffect(() => {
     if (!props.isChangeLavash) {
-      let option = document.createElement('option');
+      let option = document.createElement("option");
       option.value = props.lavash;
       option.innerHTML = props.lavash;
       selectRef.current.appendChild(option);
@@ -13,7 +14,25 @@ function Product(props) {
     selectRef.current.value = props.lavash;
   });
 
-  let [sizeShaverma, setSizeShaverma] = React.useState('стандарт');
+  let [activeSize, setActiveSize] = React.useState(props.availableSizes[0]);
+  let sizes = ["стандарт", "двойная"];
+
+  const getLiSizeClass = (size) => {
+    let sizeClass = activeSize === size ? "product_li_active" : "";
+    if (props.availableSizes.length == 1) {
+      if (size != props.availableSizes[0]) {
+        sizeClass += "product_li_disable";
+      }
+    }
+    return sizeClass;
+  };
+
+  const calculateValueFromSize = (value) => {
+    if ((props.availableSizes.length === 2) & (activeSize === "двойная")) {
+      return parseInt(value * 1.4);
+    }
+    return value;
+  };
 
   return (
     <div className="product">
@@ -22,20 +41,25 @@ function Product(props) {
           <img className="product_img" src={props.img} alt="product" />
         </div>
         <div className="product_back">
-          <img className="product_img product_img_back" src={props.img} alt="product" />
+          <img
+            className="product_img product_img_back"
+            src={props.img}
+            alt="product"
+          />
           <p>{props.description}</p>
         </div>
       </div>
       <p className="product_name">Шаверма {props.title}</p>
       <div className="product_options">
         <ul className="product_size">
-          {props.sizes.map((size) => (
+          {sizes.map((size) => (
             <li
-              className={sizeShaverma === size ? 'product_li_active' : ''}
+              className={getLiSizeClass(size)}
               onClick={() => {
-                setSizeShaverma(size);
+                setActiveSize(size);
               }}
-              key={size}>
+              key={size}
+            >
               {size}
             </li>
           ))}
@@ -52,7 +76,8 @@ function Product(props) {
       </div>
       <div className="product_price_add">
         <div className="product_price">
-          {props.price} ₽<span>{props.weight} г</span>
+          {calculateValueFromSize(props.price)} ₽
+          <span>{calculateValueFromSize(props.weight)} г</span>
         </div>
         <div className="product_button_add">
           <span className="button_add_plus">+</span> Добавить

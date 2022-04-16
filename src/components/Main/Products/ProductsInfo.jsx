@@ -1,135 +1,159 @@
-import kurinaya from './../../../img/shaurma/kurinaya.jpg';
-import svinaya from './../../../img/shaurma/svinaya.jpg';
-import gavajskaya from './../../../img/shaurma/gavajskaya.jpg';
-import halapen from './../../../img/shaurma/halapen.jpg';
-import parmezan from './../../../img/shaurma/parmezan.jpg';
-import sirChesnok from './../../../img/shaurma/sirChesnok.jpg';
-import tabasko from './../../../img/shaurma/tabasko.jpg';
-import vegan from './../../../img/shaurma/vegan.jpg';
-import cherniyCesar from './../../../img/shaurma/cherniyCesar.jpg';
-import firmennaya from './../../../img/shaurma/firmennaya.jpg';
-import kurinayaVPite from './../../../img/shaurma/kurinayaVPite.jpg';
-import vegaVPite from './../../../img/shaurma/vegaVPite.jpg';
-import svinayaVPite from './../../../img/shaurma/svinayaVPite.jpg';
-
-export const productsInfo = [
+const productsInfo = [
   {
-    title: 'Куриная',
+    id: 0,
+    title: "Куриная",
     price: 195,
     weight: 285,
-    img: kurinaya,
-    description: 'Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq',
-    lavash: 'классический',
+    img: require("./../../../img/shaurma/kurinaya.jpg"),
+    description:
+      "Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq",
+    lavash: "классический",
     isChangeLavash: true,
+    availableSizes: ["стандарт", "двойная"],
   },
   {
-    title: 'Свиная',
+    id: 1,
+    title: "Свиная",
     price: 240,
     weight: 350,
-    img: svinaya,
-    description: 'Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq',
-    lavash: 'классический',
+    img: require("./../../../img/shaurma/svinaya.jpg"),
+    description:
+      "Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq",
+    lavash: "классический",
     isChangeLavash: true,
+    availableSizes: ["стандарт", "двойная"],
   },
   {
-    title: 'Сырно-чесночная',
+    id: 2,
+    title: "Сырно-чесночная",
     price: 199,
     weight: 300,
-    img: sirChesnok,
-    description: 'Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq',
-    lavash: 'сырный',
+    img: require("./../../../img/shaurma/sirChesnok.jpg"),
+    description:
+      "Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq",
+    lavash: "сырный",
     isChangeLavash: false,
+    availableSizes: ["стандарт", "двойная"],
   },
   {
-    title: 'Пармезанная',
+    id: 3,
+    title: "Пармезанная",
     price: 210,
     weight: 304,
-    img: parmezan,
-    description: 'Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq',
-    lavash: 'сырный',
+    img: require("./../../../img/shaurma/parmezan.jpg"),
+    description:
+      "Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq",
+    lavash: "сырный",
     isChangeLavash: false,
+    availableSizes: ["стандарт", "двойная"],
   },
   {
-    title: 'Халапеньо',
+    id: 4,
+    title: "Халапеньо",
     price: 205,
     weight: 300,
-    img: halapen,
-    description: 'Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq',
-    lavash: 'классический',
+    img: require("./../../../img/shaurma/halapen.jpg"),
+    description:
+      "Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq",
+    lavash: "классический",
     isChangeLavash: true,
+    availableSizes: ["стандарт", "двойная"],
   },
   {
-    title: 'Табаско',
+    id: 5,
+    title: "Табаско",
     price: 205,
     weight: 290,
-    img: tabasko,
-    description: 'Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq',
-    lavash: 'классический',
+    img: require("./../../../img/shaurma/tabasko.jpg"),
+    description:
+      "Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq",
+    lavash: "классический",
     isChangeLavash: true,
+    availableSizes: ["стандарт", "двойная"],
   },
   {
-    title: 'Вегетаринская',
+    id: 6,
+    title: "Вегетаринская",
     price: 160,
     weight: 270,
-    img: vegan,
-    description: 'Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq',
-    lavash: 'классический',
+    img: require("./../../../img/shaurma/vegan.jpg"),
+    description: "Капуста пекинская, помидоры, огурцы, лук, соус bbq",
+    lavash: "классический",
     isChangeLavash: true,
+    availableSizes: ["стандарт", "двойная"],
   },
   {
-    title: 'Гавайская',
+    id: 7,
+    title: "Гавайская",
     price: 205,
     weight: 304,
-    img: gavajskaya,
-    description: 'Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq',
-    lavash: 'классический',
+    img: require("./../../../img/shaurma/gavajskaya.jpg"),
+    description:
+      "Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq",
+    lavash: "классический",
     isChangeLavash: true,
+    availableSizes: ["стандарт", "двойная"],
   },
   {
-    title: 'Черный цезарь',
+    id: 8,
+    title: "Черный цезарь",
     price: 275,
     weight: 390,
-    img: cherniyCesar,
-    description: 'Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq',
-    lavash: 'фирменный',
+    img: require("./../../../img/shaurma/cherniyCesar.jpg"),
+    description:
+      "Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq",
+    lavash: "фирменный",
     isChangeLavash: false,
+    availableSizes: ["двойная"],
   },
   {
-    title: 'Фирменная',
+    id: 9,
+    title: "Фирменная",
     price: 275,
     weight: 400,
-    img: firmennaya,
-    description: 'Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq',
-    lavash: 'классический',
+    img: require("./../../../img/shaurma/firmennaya.jpg"),
+    description:
+      "Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq",
+    lavash: "классический",
     isChangeLavash: true,
+    availableSizes: ["двойная"],
   },
   {
-    title: 'Куриная в пите',
+    id: 10,
+    title: "Куриная в пите",
     price: 340,
     weight: 440,
-    img: kurinayaVPite,
+    img: require("./../../../img/shaurma/kurinayaVPite.jpg"),
     description:
-      'Пита, много куриного филе, салат капустный, свежий огурчик, свежие помидоры, морковь по-корейски, красный и белый соусы собственного приготовления',
-    lavash: 'пита',
+      "Пита, много куриного филе, салат капустный, свежий огурчик, свежие помидоры, морковь по-корейски, красный и белый соусы собственного приготовления",
+    lavash: "пита",
     isChangeLavash: false,
+    availableSizes: ["двойная"],
   },
   {
-    title: 'Вега в пите',
+    id: 11,
+    title: "Вега в пите",
     price: 250,
     weight: 440,
-    img: vegaVPite,
+    img: require("./../../../img/shaurma/vegaVPite.jpg"),
     description:
-      'Пита, много куриного филе, салат капустный, свежий огурчик, свежие помидоры, морковь по-корейски, красный и белый соусы собственного приготовления',
-    lavash: 'пита',
+      "Пита, много куриного филе, салат капустный, свежий огурчик, свежие помидоры, морковь по-корейски, красный и белый соусы собственного приготовления",
+    lavash: "пита",
     isChangeLavash: false,
+    availableSizes: ["двойная"],
   },
   {
-    title: 'Свиная в пите',
-    price: 259,
+    id: 12,
+    title: "Свиная в пите",
+    price: 330,
     weight: 440,
-    img: svinayaVPite,
-    description: 'Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq',
-    lavash: 'пита',
+    img: require("./../../../img/shaurma/svinayaVPite.jpg"),
+    description:
+      "Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq",
+    lavash: "пита",
     isChangeLavash: false,
+    availableSizes: ["двойная"],
   },
 ];
+
+export default productsInfo;

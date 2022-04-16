@@ -1,23 +1,23 @@
-import React from 'react';
-import Product from './Product/Product';
-import { productsInfo } from './ProductsInfo';
+import React from "react";
+import Product from "./Product/Product";
+import items from "./ProductsInfo";
 
 function Products(props) {
   return (
     <div className="products">
       <h1>Все шавермы</h1>
       <div className="products_catalog">
-        {productsInfo.map((p) => (
+        {items.map((item) => (
           <Product
-            title={p.title}
-            price={p.price}
-            weight={p.weight}
-            img={p.img}
-            description={p.description}
-            lavash={p.lavash}
-            isChangeLavash={p.isChangeLavash}
-            sizes={['стандарт', 'двойная']}
-            key={p.title}
+            title={item.title}
+            price={item.price}
+            weight={item.weight}
+            img={item.img}
+            description={item.description}
+            lavash={item.lavash}
+            isChangeLavash={item.isChangeLavash}
+            availableSizes={item.availableSizes}
+            key={item.title}
           />
         ))}
       </div>
