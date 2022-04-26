@@ -1,5 +1,8 @@
 import React from 'react';
 import { CategoriesInfo } from './CategoriesInfo';
+import { useDispatch } from 'react-redux';
+import filters from './../../../../redux/reducers/filters';
+import { setSortCategory } from '../../../../redux/actions/filters';
 
 function Categories(props) {
   let [activeCategory, setActiveCategory] = React.useState('Все');
@@ -10,13 +13,20 @@ function Categories(props) {
     }
     return basisClassCategory;
   };
-  
+
+  const dispatch = useDispatch();
+
+  const onClickCategory = (category) => {
+    setActiveCategory(category);
+    dispatch(setSortCategory(category));
+  };
+
   return (
     <div className="main_categories">
       <ul>
         {CategoriesInfo.map((category) => (
           <li
-            onClick={() => setActiveCategory(category)}
+            onClick={() => onClickCategory(category)}
             className={getNeedClassCategory(category)}
             key={category}>
             {category}

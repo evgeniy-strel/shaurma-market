@@ -1,11 +1,11 @@
-import React from "react";
-import testImg from "./../../../../img/shaurma/kurinaya.jpg";
+import React from 'react';
+import testImg from './../../../../img/shaurma/kurinaya.jpg';
 
 function Product(props) {
-  let selectRef = React.useRef("");
+  let selectRef = React.useRef('');
   React.useEffect(() => {
     if (!props.isChangeLavash) {
-      let option = document.createElement("option");
+      let option = document.createElement('option');
       option.value = props.lavash;
       option.innerHTML = props.lavash;
       selectRef.current.appendChild(option);
@@ -15,20 +15,20 @@ function Product(props) {
   });
 
   let [activeSize, setActiveSize] = React.useState(props.availableSizes[0]);
-  let sizes = ["стандарт", "двойная"];
+  let sizes = ['стандарт', 'двойная'];
 
   const getLiSizeClass = (size) => {
-    let sizeClass = activeSize === size ? "product_li_active" : "";
+    let sizeClass = activeSize === size ? 'product_li_active' : '';
     if (props.availableSizes.length == 1) {
       if (size != props.availableSizes[0]) {
-        sizeClass += "product_li_disable";
+        sizeClass += 'product_li_disable';
       }
     }
     return sizeClass;
   };
 
   const calculateValueFromSize = (value) => {
-    if ((props.availableSizes.length === 2) & (activeSize === "двойная")) {
+    if ((props.availableSizes.length === 2) & (activeSize === 'двойная')) {
       return parseInt(value * 1.4);
     }
     return value;
@@ -41,11 +41,7 @@ function Product(props) {
           <img className="product_img" src={props.img} alt="product" />
         </div>
         <div className="product_back">
-          <img
-            className="product_img product_img_back"
-            src={props.img}
-            alt="product"
-          />
+          <img className="product_img product_img_back" src={props.img} alt="product" />
           <p>{props.description}</p>
         </div>
       </div>
@@ -58,8 +54,7 @@ function Product(props) {
               onClick={() => {
                 setActiveSize(size);
               }}
-              key={size}
-            >
+              key={size}>
               {size}
             </li>
           ))}

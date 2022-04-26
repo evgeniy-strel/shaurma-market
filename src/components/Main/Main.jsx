@@ -1,6 +1,6 @@
-import React from "react";
-import Products from "./Products/Products";
-import TopContent from "./TopContent/TopContent";
+import React from 'react';
+import Products from './Products/Products';
+import TopContent from './TopContent/TopContent';
 
 const Main = () => {
   return (

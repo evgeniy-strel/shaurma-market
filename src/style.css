@@ -663,6 +663,8 @@ main .products .product_price_add .product_button_add span {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .shopping_cart_wrapper .shopping_cart_product_view_text p {

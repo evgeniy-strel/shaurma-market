@@ -1,8 +1,10 @@
-import React from "react";
-import Product from "./Product/Product";
-import items from "./ProductsInfo";
+import React from 'react';
+import Product from './Product/Product';
+import { useSelector } from 'react-redux';
 
-function Products(props) {
+const Products = () => {
+  const items = useSelector(({ shavermas }) => shavermas.items);
+
   return (
     <div className="products">
       <h1>Все шавермы</h1>
@@ -23,6 +25,6 @@ function Products(props) {
       </div>
     </div>
   );
-}
+};
 
 export default Products;
