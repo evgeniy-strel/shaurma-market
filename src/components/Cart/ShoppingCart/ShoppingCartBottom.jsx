@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ShoppingCartBottom = () => {
+const ShoppingCartBottom = ({ totalCount, totalPrice }) => {
   return (
     <div className="shopping_cart_bottom">
       <div className="shopping_cart_bottom_text">
         <p className="quantity_products">
-          Всего шаверм: <span>6 шт.</span>
+          Всего шаверм: <span>{totalCount} шт.</span>
         </p>
         <p className="total_amount_products">
-          Сумма заказа: <span>900 ₽</span>
+          Сумма заказа: <span>{totalPrice} ₽</span>
         </p>
       </div>
       <div className="shopping_cart_bottom_buttons">

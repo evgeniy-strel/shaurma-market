@@ -9,7 +9,9 @@
       "description": "Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq",
       "lavash": "классический",
       "isChangeLavash": true,
-      "availableSizes": ["стандарт", "двойная"]
+      "availableSizes": ["стандарт", "двойная"],
+      "category": "Куриные",
+      "popular": 7
     },
     {
       "id": 1,
@@ -20,7 +22,9 @@
       "description": "Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq",
       "lavash": "классический",
       "isChangeLavash": true,
-      "availableSizes": ["стандарт", "двойная"]
+      "availableSizes": ["стандарт", "двойная"],
+      "category": "Свиные",
+      "popular": 6
     },
     {
       "id": 2,
@@ -31,7 +35,9 @@
       "description": "Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq",
       "lavash": "сырный",
       "isChangeLavash": false,
-      "availableSizes": ["стандарт", "двойная"]
+      "availableSizes": ["стандарт", "двойная"],
+      "category": "Куриные",
+      "popular": 5
     },
     {
       "id": 3,
@@ -42,7 +48,9 @@
       "description": "Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq",
       "lavash": "сырный",
       "isChangeLavash": false,
-      "availableSizes": ["стандарт", "двойная"]
+      "availableSizes": ["стандарт", "двойная"],
+      "category": "Куриные",
+      "popular": 5
     },
     {
       "id": 4,
@@ -53,7 +61,9 @@
       "description": "Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq",
       "lavash": "классический",
       "isChangeLavash": true,
-      "availableSizes": ["стандарт", "двойная"]
+      "availableSizes": ["стандарт", "двойная"],
+      "category": "Острые",
+      "popular": 3
     },
     {
       "id": 5,
@@ -64,7 +74,9 @@
       "description": "Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq",
       "lavash": "классический",
       "isChangeLavash": true,
-      "availableSizes": ["стандарт", "двойная"]
+      "availableSizes": ["стандарт", "двойная"],
+      "category": "Острые",
+      "popular": 2
     },
     {
       "id": 6,
@@ -75,7 +87,9 @@
       "description": "Капуста пекинская, помидоры, огурцы, лук, соус bbq",
       "lavash": "классический",
       "isChangeLavash": true,
-      "availableSizes": ["стандарт", "двойная"]
+      "availableSizes": ["стандарт", "двойная"],
+      "category": "Вегетарианские",
+      "popular": 1
     },
     {
       "id": 7,
@@ -86,7 +100,9 @@
       "description": "Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq",
       "lavash": "классический",
       "isChangeLavash": true,
-      "availableSizes": ["стандарт", "двойная"]
+      "availableSizes": ["стандарт", "двойная"],
+      "category": "Куриные",
+      "popular": 5
     },
     {
       "id": 8,
@@ -97,7 +113,9 @@
       "description": "Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq",
       "lavash": "фирменный",
       "isChangeLavash": false,
-      "availableSizes": ["двойная"]
+      "availableSizes": ["двойная"],
+      "category": "Куриные",
+      "popular": 8
     },
     {
       "id": 9,
@@ -108,7 +126,9 @@
       "description": "Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq",
       "lavash": "классический",
       "isChangeLavash": true,
-      "availableSizes": ["двойная"]
+      "availableSizes": ["двойная"],
+      "category": "Куриные",
+      "popular": 6
     },
     {
       "id": 10,
@@ -119,7 +139,9 @@
       "description": "Пита, много куриного филе, салат капустный, свежий огурчик, свежие помидоры, морковь по-корейски, красный и белый соусы собственного приготовления",
       "lavash": "пита",
       "isChangeLavash": false,
-      "availableSizes": ["двойная"]
+      "availableSizes": ["двойная"],
+      "category": "В пите",
+      "popular": 4
     },
     {
       "id": 11,
@@ -130,7 +152,9 @@
       "description": "Пита, много куриного филе, салат капустный, свежий огурчик, свежие помидоры, морковь по-корейски, красный и белый соусы собственного приготовления",
       "lavash": "пита",
       "isChangeLavash": false,
-      "availableSizes": ["двойная"]
+      "availableSizes": ["двойная"],
+      "category": "В пите",
+      "popular": 1
     },
     {
       "id": 12,
@@ -141,7 +165,9 @@
       "description": "Мясо курицы, капуста пекинская, помидоры, огурцы, лук, соус bbq",
       "lavash": "пита",
       "isChangeLavash": false,
-      "availableSizes": ["двойная"]
+      "availableSizes": ["двойная"],
+      "category": "В пите",
+      "popular": 5
     }
   ]
 }

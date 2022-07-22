@@ -1,16 +1,23 @@
 const initialState = {
-    items: [],
-    isLoaded: false,
+  items: [],
+  isLoaded: false,
 };
 
 const shavermas = (state = initialState, action) => {
-    if (action.type == 'SET_SHAVERMAS') {
-        return {
-            isLoaded: true,
-            items: action.payload,
-        };
-    }
-    return state;
-}
+  switch (action.type) {
+    case "SET_SHAVERMAS":
+      return {
+        isLoaded: true,
+        items: action.payload,
+      };
+    case "SET_LOADED":
+      return {
+        ...state,
+        isLoaded: action.payload,
+      };
+    default:
+      return state;
+  }
+};
 
 export default shavermas;
