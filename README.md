@@ -11,3 +11,4 @@
 - react router dom
 - json server
 - react-skeleton-loader
+- axios
