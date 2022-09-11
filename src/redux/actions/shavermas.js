@@ -18,7 +18,7 @@ const getAxiosPath = (sortBy, category) => {
     цене: "price",
     алфавиту: "title",
   };
-  let startUrl = "http://localhost:3001/items/?";
+  let startUrl = "/items/?";
   if (category !== "Все") startUrl += `category=${category}`;
   startUrl += `&_sort=${translateSortBy[sortBy]}&_order`;
 
