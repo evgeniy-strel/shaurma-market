@@ -14,3 +14,5 @@
 - json server
 - react-skeleton-loader
 - axios
+
+Посмотреть на Heroku: https://shaurma-market.herokuapp.com/
