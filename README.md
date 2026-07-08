@@ -1,5 +1,7 @@
 # Shaurma-market - магазин шаурмы.
 
+Опробовать: https://shaurma-market.onrender.com/
+
 На сайте реализовано:
 
 - плавная подгрузка товаров с его скелетом
@@ -14,5 +16,3 @@
 - json server
 - react-skeleton-loader
 - axios
-
-Посмотреть на Heroku: https://shaurma-market.herokuapp.com/
