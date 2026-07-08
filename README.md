@@ -1,4 +1,4 @@
-# Shaurma-market - магазин шаурмы.
+# 🌯 Shaurma-market - магазин шаурмы
 
 Опробовать: https://shaurma-market.onrender.com/
 
